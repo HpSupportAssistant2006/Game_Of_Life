@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <table border="2">
+        <tr>
+            <td colspan="2" class="distanceElem">Person information</td>
+        </tr>
+        <tr>
+            <td colspan="2" ><p id="weather">Spring</p></td>
+        </tr>
+        <tr>
+            <td>Person</td>
+            <td>function</td>
+        </tr>
+        <tr>
+            <td style="background:green;">Grass</td>
+            <td>Multiple</td>
+        </tr>
+        <tr>
+            <td style="background:yellow;">Grass Eater</td>
+            <td>Multiple, eat Grass, move, die</td>
+        </tr>
+        <tr>
+            <td style="background:#FFB81C;">Predator</td>
+            <td>Multiple, eat Grass Eater, move, die</td>
+        </tr>
+        <tr>
+            <td style="background:cyan;">Magic</td>
+            <td>Restore everything</td>
+        </tr>
+        <tr>
+            <td style="background:#cf1020;">Lava</td>
+            <td>Destroy everything</td>
+        </tr>
+        <tr>
+            <td colspan="2"> <a href="#" class="btnStyle"
+                    onclick="if(showCordinates == false){showCordinates = true}else{showCordinates = false}">Cordinates</a>
+                <a href="#" class="btnStyle"
+                    onclick="window.location.href = window.location.pathname + window.location.search + window.location.hash">Reload
+                    Page
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <a id="domination" onclick="domination();">Armagedeon</a>
+            </td>
+        </tr>
+    </table>
+    <br />
+    
+</body>
+
+</html>
