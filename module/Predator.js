@@ -25,7 +25,6 @@ module.exports = class Predator extends LivingCreature{
     move() {
         
         var fullCells = this.chooseCell(0);
-         //serveri Random function em ogtagorcum
         var newCell = Random(fullCells);
 
         if (newCell) {
@@ -39,7 +38,6 @@ module.exports = class Predator extends LivingCreature{
         }
     }
     eat() {
-         //serveri Random function em ogtagorcum
         var grass = Random(this.chooseCell(2));
 
         if (grass) {
@@ -59,20 +57,13 @@ module.exports = class Predator extends LivingCreature{
         }
     }
     mul() {
-       // this.multiply++;
-        //the same as >
-        //var emptyCells = this.chooseCell(0);
-        // var newcell = random(emtyCells); 
         var newCell = Random(this.chooseCell(0));
         if (this.energy >= 6 && newCell) {
-            // the same as >
-            // var newX = newCell[0];
-            // var newY = newCell[1];
-            // matrix[newY][newX] = this.index;
             var newPredator = new Predator(newCell[0], newCell[1], this.index);
             predatorArr.push(newPredator);
             matrix[newCell[1]][newCell[0]] = this.index;
             this.energy = 0;
+            predatorBurn++;
         }
     }
     die() {

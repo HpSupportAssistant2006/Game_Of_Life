@@ -39,14 +39,17 @@ module.exports = class Water extends LivingCreatures {
                     if (matrix[this.y][this.x] == 1) {
                         var grass = new Grass(this.x, this.y, 1);
                         grassArr.push(grass);
+                        grassBurn++;
                     }
                     if (matrix[this.y][this.x] == 2) {
                         var grassEater = new GrassEater(this.x, this.y, 2);
                         grasseaterArr.push(grassEater);
+                        grassEaterBurn++;
                     }
                     if (matrix[this.y][this.x] == 3) {
                         var predator = new Predator(this.x, this.y, 3);
                         predatorArr.push(predator);
+                        predatorBurn++;
                     }
                     this.x = newCell[0];
                     this.y = newCell[1];

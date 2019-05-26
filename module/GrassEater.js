@@ -5,7 +5,6 @@ module.exports = class GrassEater extends LivingCreature {
         super(x, y, index);
         this.energy = 8;
     }
-    //es orinaka duq dzer directiony greq
     getNewCoordinates() {
         this.directions = [
             [this.x - 1, this.y - 1],
@@ -26,7 +25,6 @@ module.exports = class GrassEater extends LivingCreature {
     move() {
 
         var fullCells = this.chooseCell(0);
-        //serveri Random function em ogtagorcum
         var newCell = Random(fullCells);
 
         if (newCell) {
@@ -41,7 +39,6 @@ module.exports = class GrassEater extends LivingCreature {
         }
     }
     eat() {
-        //serveri Random function em ogtagorcum
         var grass = Random(this.chooseCell(1));
 
         if (grass) {
@@ -62,20 +59,13 @@ module.exports = class GrassEater extends LivingCreature {
         }
     }
     mul() {
-        // this.multiply++;
-        //the same as >
-        //var emptyCells = this.chooseCell(0);
-        // var newcell = random(emtyCells); 
         var newCell = Random(this.chooseCell(0));
         if (this.energy >= 6 && newCell) {
-            // the same as >
-            // var newX = newCell[0];
-            // var newY = newCell[1];
-            // matrix[newY][newX] = this.index;
             var newGrassEater = new GrassEater(newCell[0], newCell[1], this.index);
             grasseaterArr.push(newGrassEater);
             matrix[newCell[1]][newCell[0]] = this.index;
             this.energy = 0;
+            grassEaterBurn++;
         }
     }
     die() {
