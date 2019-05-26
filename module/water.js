@@ -24,14 +24,14 @@ module.exports = class Water extends LivingCreatures {
 
     flow() {
         var character;
-        if(Math.round(Math.random()) == 0){
+        if (Math.round(Math.random()) == 0) {
             character = 4;
-        }else{
+        } else {
             character = 5;
         };
         this.timer++;
         var newCell = Random(this.chooseCell(character));
-        if(newCell != undefined && this.x != undefined && this.y != undefined){
+        if (newCell != undefined && this.x != undefined && this.y != undefined) {
             if (this.timer >= 20) {
                 if (newCell[0] >= 0 && newCell[0] < matrix[0].length && newCell[1] >= 0 && newCell[1] < matrix[0].length) {
                     matrix[newCell[1]][newCell[0]] = this.index;

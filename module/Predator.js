@@ -1,8 +1,8 @@
 var LivingCreature = require("./LivingCreature.js");
 
-module.exports = class Predator extends LivingCreature{
+module.exports = class Predator extends LivingCreature {
     constructor(x, y, index) {
-        super (x,y,index)
+        super(x, y, index)
         this.energy = 10;
     }
     getNewCoordinates() {
@@ -20,10 +20,10 @@ module.exports = class Predator extends LivingCreature{
 
     chooseCell(character) {
         this.getNewCoordinates();
-       return  super.chooseCell(character);
+        return super.chooseCell(character);
     }
     move() {
-        
+
         var fullCells = this.chooseCell(0);
         var newCell = Random(fullCells);
 

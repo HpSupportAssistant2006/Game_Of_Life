@@ -15,7 +15,7 @@ function mousePressed() {
     var y = Math.floor(mouseY / side);
     arr = [x, y];
     socket.emit("Sxmvec", arr)
- }
+}
 
 function domination() {
     socket.emit("armagedeon", doArmagedeon);
@@ -93,11 +93,11 @@ function drawMatrix(matrix) {
                     }
                 }
             }
-            else if (matrix[y][x] == 6) {
-                fill("red");
-            }
             else if (matrix[y][x] == 7) {
                 fill("white");
+            }
+            else if (matrix[y][x] == 6) {
+                fill("red");
             }
             rect(x * side, y * side, side, side);
         }

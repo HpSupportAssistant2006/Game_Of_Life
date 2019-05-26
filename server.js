@@ -47,8 +47,8 @@ Random = function (arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-var w = 30;
-var h = 40;
+var w = 60;
+var h = 70;
 
 function generateMatrix(w, h) {
     var matrix = [];

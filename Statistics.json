@@ -1,0 +1,85 @@
+{
+  "info": [
+    {
+      "grass init": 800,
+      "grassEater init": 1840,
+      "predator init": 3341,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 0
+    },
+    {
+      "grass init": 1040,
+      "grassEater init": 1892,
+      "predator init": 5917,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 0
+    },
+    {
+      "grass init": 1367,
+      "grassEater init": 1898,
+      "predator init": 8701,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 0
+    },
+    {
+      "grass init": 1726,
+      "grassEater init": 1898,
+      "predator init": 10348,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 1
+    },
+    {
+      "grass init": 1762,
+      "grassEater init": 1898,
+      "predator init": 11346,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 1
+    },
+    {
+      "grass init": 2337,
+      "grassEater init": 2078,
+      "predator init": 12084,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 1
+    },
+    {
+      "grass init": 2921,
+      "grassEater init": 2421,
+      "predator init": 12709,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 1
+    },
+    {
+      "grass init": 3433,
+      "grassEater init": 2421,
+      "predator init": 13104,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 2
+    },
+    {
+      "grass init": 4028,
+      "grassEater init": 2646,
+      "predator init": 13415,
+      "lava init": 616,
+      "water init": 667,
+      "domination init": 0,
+      "weather change init": 2
+    }
+  ]
+}

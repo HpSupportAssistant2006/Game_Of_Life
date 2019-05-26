@@ -42,19 +42,19 @@ module.exports = class Lava extends LivingCreatures {
                             grassArr.splice(i, 1);
                         }
                     }
-                }else if (matrix[newCell[1]][newCell[0]] == 2) {
+                } else if (matrix[newCell[1]][newCell[0]] == 2) {
                     for (var i in grasseaterArr) {
                         if (grasseaterArr[i].x == newCell[0] && grasseaterArr[i].y == newCell[1]) {
                             grasseaterArr.splice(i, 1);
                         }
                     }
-                }else if (matrix[newCell[1]][newCell[0]] == 3) {
+                } else if (matrix[newCell[1]][newCell[0]] == 3) {
                     for (var i in predatorArr) {
                         if (predatorArr[i].x == newCell[0] && predatorArr[i].y == newCell[1]) {
                             predatorArr.splice(i, 1);
                         }
                     }
-                }else if (matrix[newCell[1]][newCell[0]] == 5) {
+                } else if (matrix[newCell[1]][newCell[0]] == 5) {
                     for (var i in waterArr) {
                         if (waterArr[i].x == newCell[0] && waterArr[i].y == newCell[1]) {
                             waterArr.splice(i, 1);
